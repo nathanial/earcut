@@ -105,11 +105,26 @@ cd lean4
 lake build
 ```
 
-## Running Tests
+## Running Demo
 
 ```bash
 lake exe earcut
 ```
+
+## Running Tests
+
+The test suite includes 17+ fixture-based tests from the original JavaScript implementation, each tested at 4 rotations (0°, 90°, 180°, 270°):
+
+```bash
+lake exe test
+```
+
+Test fixtures include:
+- Basic polygons (building, indices-2d, indices-3d)
+- Polygons with holes (dude, issue16, issue17, steiner)
+- Edge cases (degenerate, empty-square, hourglass)
+- Complex cases (water3b, touching holes, bad-diagonals)
+- Regression tests (issue142, issue149, infinite-loop)
 
 ## Algorithm
 

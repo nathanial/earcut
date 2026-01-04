@@ -10,3 +10,6 @@ lean_lib «Earcut» where
 @[default_target]
 lean_exe «earcut» where
   root := `Main
+
+lean_exe «test» where
+  root := `Test
